@@ -103,11 +103,11 @@ class Preload extends Phaser.Scene {
           let w = this.CONFIG.width - (2 * this.progress.x);
           let h = 18;
           this.progress.clear();
-          this.progress.fillStyle('0xa67b4d', 1);
+          this.progress.fillStyle('0xffffff', 1);
           this.progress.fillRect(0, 0, w * value, h);
 
           this.border.clear();
-          this.border.lineStyle(2, '0x4D6592', 1);
+          this.border.lineStyle(2, '0x4d6592', 1);
           this.border.strokeRect(0, 0, w * value, h);
 
           this.txt_progress.setText(Math.round(value * 100) + '%');
