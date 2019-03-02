@@ -19,10 +19,14 @@ class Game extends Phaser.Scene {
      }
 
      update() {
-          if (this.distance < this.CONFIG.width + this.centerPlanet.planet.width) {
+          if (this.distance < this.CONFIG.centerX) {
                this.distance++;
+               this.gameon = true;
           }
-          this.centerPlanet.moveToX(0 + this.distance);
+          this.centerPlanet.moveToX(this.distance);
+          if (this.gameon) {
+               // Game start
+          }
      }
 
 }
