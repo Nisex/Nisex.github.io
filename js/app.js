@@ -18,7 +18,7 @@ App.prototype.start = function () {
      scenes.push(Menu);
      scenes.push(Game);
 
-     const config = {
+     var config = {
           type: Phaser.AUTO,
           parent: 'app',
           width: WIDTH,
