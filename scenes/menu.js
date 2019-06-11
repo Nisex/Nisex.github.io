@@ -18,7 +18,7 @@ class Menu extends Phaser.Scene {
                this.CONFIG.centerX,
                75,
                'LifeRay',
-               'title',
+               'title', 16,
                0.5);
 
           this.playbutton = this.add.graphics({ x: this.CONFIG.centerX - 100, y: this.CONFIG.centerY + 50 });
@@ -38,7 +38,7 @@ class Menu extends Phaser.Scene {
                this.buttonBorder.x + 25,
                this.buttonBorder.y + 25,
                'Play',
-               'button',
+               'button', 16,
                0.5);
 
           this.input.on('pointerup', function (pointer) {

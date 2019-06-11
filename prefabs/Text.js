@@ -1,5 +1,5 @@
 class Text {
-     constructor(ctx, x, y, string, style, origin) {
+     constructor(ctx, x, y, string, style, size, origin) {
           this.ctx = ctx;
 
           this.x = x;
@@ -7,16 +7,16 @@ class Text {
 
           this.text = string;
 
-          this.style = this.initStyle(style);
+          this.style = this.initStyle(style, size);
           this.origin = this.initOrigin(origin);
 
           this.obj = this.createText();
      }
 
-     initStyle(key) {
+     initStyle(key, size) {
           let style = {
                fontFamily: 'ClickPixel',
-               fontSize: 16,
+               fontSize: size,
                color: '0xFFFFFF',
                align: 'center'
           }
